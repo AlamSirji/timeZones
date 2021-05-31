@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgb(41, 32, 38);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.subWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.7rem;
+}
+
+.subWrapper div {
+    display: flex;
+    box-shadow: 0px 0px 5px 5px rgba(19, 17, 17, 0.445);
+    margin: 5px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+aside {
+    align-self: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+select,
+input {
+    margin: 10px 2px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.spinner {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #fff;
+    border-top: 1px solid #0e1a31;
+    border-radius: 50%;
+    display: inline-block;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
